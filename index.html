@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ready File</title>
+    <!-- Bootsrap & CSS Link Here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section id="calculatorBody">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+
+                </div>
+
+                <div class="col-lg-4 calculatorBody mt-5 mb-5">
+                    <h2 class="mb-3">Simple Calculator</h2>
+                    <form class="calculationButton" name="calc">
+                    <input class="value d-flex justify-content-end mb-2 output" type="text" name="txt">
+                        <div class="mb-2 ">
+                            <input class="num" onclick="document.calc.txt.value +='7'" type="button" value="7">
+                            <input class="num" onclick="document.calc.txt.value +='8'" type="button" value="8">
+                            <input class="num" onclick="document.calc.txt.value +='9'" type="button" value="9">
+                            <input class="num" onclick="document.calc.txt.value +='/'" type="button" value="/">
+                        </div>
+                        <div class="mb-2">
+                            <input class="num" onclick="document.calc.txt.value +='4'" type="button" value="4">
+                            <input class="num" onclick="document.calc.txt.value +='5'" type="button" value="5">
+                            <input class="num" onclick="document.calc.txt.value +='6'" type="button" value="6">
+                            <input class="num" onclick="document.calc.txt.value +='*'" type="button" value="*">
+                        </div>
+                        <div class="mb-2">
+                            <input class="num" onclick="document.calc.txt.value +='1'" type="button" value="1">
+                            <input class="num" onclick="document.calc.txt.value +='2'" type="button" value="2">
+                            <input class="num" onclick="document.calc.txt.value +='3'" type="button" value="3">
+                            <input class="num" onclick="document.calc.txt.value +='-'" type="button" value="-">
+                        </div>
+                        <div>
+                            <input class="num" onclick="document.calc.txt.value +='0'" type="button" value="0">
+                            <input class="num" onclick="document.calc.txt.value +='.'" type="button" value=".">
+                            <input class="num" onclick="document.calc.txt.value +='%'" type="button" value="%">
+                            <input class="num plus" onclick="document.calc.txt.value +='+'" type="button" value="+">
+                        </div>
+                        <div class="mt-2">
+                            <input class="num equal" onclick="document.calc.txt.value = eval(document.calc.txt.value)" type="button" value="=">
+                            <input class="num" onclick="document.calc.txt.value =''" type="button" value="C">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-4">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Link Here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
